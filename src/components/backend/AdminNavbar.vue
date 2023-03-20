@@ -1,9 +1,4 @@
 <template>
-    <!-- <div class="admin-navbar d-flex justify-content-between py-3">
-        <router-link to="/"> &lt 回前台</router-link>
-        <a href="#" @click.prevent="logout">登出</a>
-    </div> -->
-    <!-- RWD -->
     <div class="bg-secondary d-md-none d-block">
         <button class="btn " type="button" @click="toggleOffcanvas">
             <i class="bi bi-list" style="font-size: 36px;"></i>
@@ -14,9 +9,11 @@
     <div :class="{ 'show': pageWidth >= 768 }" class="offcanvas offcanvas-start bg-secondary p-3" tabindex="-1"
         ref="myOffcanvas" id="myOffcanvas">
         <div class="offcanvas-header ">
-            <h5 class="offcanvas-title mt-3 " id="offcanvasExampleLabel">
-                <img src="https://i.imgur.com/C8CjyXX.png" alt="">
-            </h5>
+            <div class="offcanvas-title mt-3 " id="offcanvasExampleLabel">
+                <router-link to="/">
+                    <img src="https://i.imgur.com/C8CjyXX.png" alt="">
+                </router-link>
+            </div>
             <button type="button" class="btn close-navbar d-md-none d-block" @click="toggleOffcanvas">
                 <i class="bi bi-x-lg" style="font-size: 24px;"></i>
             </button>

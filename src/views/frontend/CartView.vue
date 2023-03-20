@@ -64,12 +64,13 @@
                     </ul>
                     <ul>
                         <li>運費NT$</li>
-                        <li>200</li>
+                        <li v-if="cart.final_total < 10000">200</li>
+                        <li v-else><s>200</s></li>
                     </ul>
                     <hr class="bg-primary">
                     <ul>
                         <li>總計NT$</li>
-                        <li>{{ cart.final_total + 200 }}</li>
+                        <li>{{ cart.final_total > 10000 ? cart.final_total : cart.final_total + 200 }}</li>
                     </ul>
                     <router-link class="btn btn-primary mt-5" to="/checkout">前往付款</router-link>
                 </div>
