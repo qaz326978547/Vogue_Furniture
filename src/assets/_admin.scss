@@ -1,0 +1,46 @@
+.active {
+    background-color: $primary;
+    color: white;
+}
+
+.active-link {
+    background-color: $primary;
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+//product
+
+.imagesUrl {
+    position: relative;
+
+    .delete-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.modal {
+    --bs-modal-width: 80%;
+}
+
+//coupon
+.table>tbody {
+    vertical-align: middle;
+}
+
+//order
+
+.admin-order-navbar {
+    li.active {
+        background-color: $primary;
+        color: white;
+        border-radius: 20px;
+    }
+
+    li {
+        padding: 8px;
+    }
+}

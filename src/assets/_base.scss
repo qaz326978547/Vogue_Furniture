@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+article,
+section,
+aside,
+address,
+nav,
+header,
+footer,
+img {
+    display: block;
+}
+
+img {
+    border: none;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+label {
+    color: $primary;
+}
+
+
+
+table {
+
+    th,
+    td {
+        text-align: center;
+    }
+}

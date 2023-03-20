@@ -1,0 +1,30 @@
+.home-main-selection {
+    i {
+        font-size: 36px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 18px;
+        color: $primary;
+    }
+}
+
+.project-img {
+    height: 400px;
+}
+
+.projects-img {
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    .project-img {
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .content-text {
+        font-size: 20px;
+    }
+}

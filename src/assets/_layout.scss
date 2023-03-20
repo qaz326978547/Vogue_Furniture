@@ -1,0 +1,86 @@
+.nav-bar {
+    >li {
+        padding: 0.5rem 1rem;
+    }
+
+
+}
+
+.main-nav {
+    position: fixed;
+    width: 100%;
+    background-color: none;
+    z-index: 10;
+}
+
+footer {
+    width: 100%;
+    background-color: $secondary;
+
+    img {
+        width: 300px;
+    }
+}
+
+
+.goTop-icon {
+    cursor: pointer;
+    color: white;
+    background-color: $primary;
+    text-align: center;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    z-index: 100;
+}
+
+.nav-bar-rwd.active {
+    max-height: 450px;
+    transition: max-height 0.5s ease-in;
+    background-color: white;
+
+}
+
+.cart-icon {
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    right: 3%;
+    bottom: 20%;
+    z-index: 100;
+}
+
+@media (max-width: 767.98px) {
+    footer img {
+        width: 200px;
+    }
+
+    .nav-bar-rwd {
+        position: absolute;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 5;
+        top: 75px;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        background-color: white;
+
+        ul {
+            padding: 8px 0;
+        }
+    }
+
+
+
+}
