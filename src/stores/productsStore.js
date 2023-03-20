@@ -58,18 +58,26 @@ export default defineStore('products', {
             }
         },
         getCategoryItem(category) {
+            console.log(category)
             if (category == 'all') {
                 this.getProducts()
             } else {
                 axios.get(`${VITE_URL}/api/${VITE_PATH}/products/all`)
                     .then((res) => {
                         const arr = res.data.products.filter(item => item.category == category)
+                        console.log(arr)
                         this.categoryItem = arr
                         let limit = []
                         for (let i = 0; i < 4; i++) {
-                            limit.push(arr[i])
+                            if (arr[i] == undefined) {
+                                break;
+                            } else {
+                                limit.push(arr[i])
+
+                            }
                         }
                         this.limitProduct = limit
+                        console.log(this.limitProduct)
                     })
                     .catch((err) => {
                         const errMessage = err.data?.message || '資料取得失敗，稍後在試';

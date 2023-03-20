@@ -66,7 +66,6 @@ import productsStore from '../../stores/productsStore.js';
 import { mapActions, mapState } from 'pinia';
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination } from 'swiper'
-const { VITE_URL, VITE_PATH } = import.meta.env;
 
 export default {
     data() {
