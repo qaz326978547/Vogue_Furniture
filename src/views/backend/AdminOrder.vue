@@ -58,7 +58,7 @@
     </nav>
 
     <!-- 分頁 -->
-    <admin-order-modal :tempOrder="tempOrder"></admin-order-modal>
+    <admin-order-modal :tempOrder="tempOrder" :oderProduct="oderProduct"></admin-order-modal>
     <admin-order-delete-modal :tempOrder="tempOrder" :delOrder="delOrder"></admin-order-delete-modal>
 </template>
 
@@ -81,7 +81,8 @@ export default {
     data() {
         return {
             orderState: 'all',
-            tempOrder: {}
+            tempOrder: {},
+            oderProduct: {}
         }
     },
     components: {
@@ -97,6 +98,7 @@ export default {
             this.getOrders(state)
         },
         openModal(order, isDelete) {
+            console.log('order-product', order);
             this.tempOrder = order
             if (isDelete) {
                 console.log(this.tempOrder);

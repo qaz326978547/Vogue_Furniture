@@ -26,9 +26,10 @@
                         <td>{{ product.origin_price }}</td>
                         <td>{{ product.price }}</td>
                         <td>
-                            <span>
-                                {{ product.is_enabled ? '已啟用' : '未啟用' }}
-                            </span>
+                            <div class="form-check form-switch d-flex justify-content-center">
+                                <input @change="updateIsEnabled(product)" :checked="product.is_enabled"
+                                    class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            </div>
                         </td>
                         <td>
                             <div class="btn-group">
@@ -122,6 +123,16 @@ export default {
                 delProductModal.show()
 
             }
+        },
+        updateIsEnabled(product) {
+            console.log(product);
+            this.tempProduct = { ...product }
+            this.axios.put(`${VITE_URL}/api/${VITE_PATH}/admin/product/${this.tempProduct.id}`, { data: this.tempProduct })
+                .then((res) => {
+                    console.log(res);
+                    this.getState('編輯成功', true)
+                    this.getAdminProduct()
+                })
         },
         updateData() {
             if (this.isNew) {

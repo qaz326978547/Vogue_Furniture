@@ -4,7 +4,8 @@ import axios from 'axios';
 import VueAxios from 'vue-axios'
 import App from './App.vue'
 import router from './router'
-import "bootstrap"
+import * as bootstrap from 'bootstrap';
+window.bootstrap = bootstrap;
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import swal from 'sweetalert';
 //日期套件

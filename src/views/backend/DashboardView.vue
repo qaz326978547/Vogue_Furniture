@@ -1,6 +1,8 @@
 <template>
     <admin-navbar></admin-navbar>
-    <router-view></router-view>
+    <div class="left-padding pb-5">
+        <router-view></router-view>
+    </div>
 </template>
 
 
