@@ -1,0 +1,1 @@
+.card{position:relative}.card .product-img{display:block;transition:transform .5s ease;min-height:200px}.card:hover .product-img{transform:scale(1.2);z-index:50}
