@@ -22,17 +22,6 @@
 <script>
 export default {
     props: ['pages', 'changePage'],
-    data() {
-        return {
-
-        }
-    },
-    mounted() {
-        console.log(this.pages);
-        console.log(this.changePage);
-        // this.changePage(2)
-    }
-
 }
 
 

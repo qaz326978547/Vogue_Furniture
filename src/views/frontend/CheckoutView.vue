@@ -65,14 +65,12 @@ export default {
     },
     methods: {
         onSubmit() {
-            console.log(this.user);
             const data = {
                 data: {
                     user: this.user
                 },
                 message: this.message
             }
-            console.log(data);
             this.axios.post(`${VITE_URL}/api/${VITE_PATH}/order`, data)
                 .then((res) => {
                     console.log('data訂單', res.data);

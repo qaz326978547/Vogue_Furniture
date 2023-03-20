@@ -30,14 +30,6 @@
 <script>
 export default {
     props: ['tempCoupon', 'delCoupon'],
-    data() {
-        return {
-
-        }
-    },
-    mounted() {
-        console.log(this.tempCoupon);
-    }
 }
 
 

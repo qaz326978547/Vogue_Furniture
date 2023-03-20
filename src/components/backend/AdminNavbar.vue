@@ -38,7 +38,7 @@ export default {
                 this.axios.defaults.headers.common['Authorization'] = token;
                 this.axios.post(`${VITE_URL}/api/user/check`)
                     .then((res) => {
-                        // console.log(res);
+                        console.log(res);
                     })
                     .catch((error) => {
                         const errMessage = error.data?.message || '沒有權限，請登入';
@@ -67,7 +67,6 @@ export default {
     },
     mounted() {
         this.checkAdmin()
-        console.log(this.$moment().format('YYYY-MM-DD'));
     }
 
 }

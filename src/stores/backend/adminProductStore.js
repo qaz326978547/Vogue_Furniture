@@ -22,8 +22,6 @@ export default defineStore('adminProduct', {
                     const { products, pagination } = res.data;
                     this.products = products
                     this.pages = pagination
-                    console.log('products', products);
-                    console.log('page', pagination);
                     this.isLoading = false
                 })
         },

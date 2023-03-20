@@ -105,7 +105,6 @@ export default {
   watch: {
     $route() {
       this.path = this.$route.path
-      console.log(this.path);
     }
   },
   methods: {
@@ -114,7 +113,6 @@ export default {
       window, scrollTo(0, 0)
     },
     handleScroll() {
-      console.log(this.scrollY);
       if (this.path == "/") {
         this.navColor = false
         if (this.scrollY > 50) {

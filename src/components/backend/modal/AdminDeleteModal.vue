@@ -30,14 +30,6 @@
 <script>
 export default {
     props: ['tempProduct', 'delData'],
-    data() {
-        return {
-
-        }
-    },
-    mounted() {
-        console.log(this.tempProduct);
-    }
 }
 
 

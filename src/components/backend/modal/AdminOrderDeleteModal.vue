@@ -30,14 +30,6 @@
 <script>
 export default {
     props: ['tempOrder', 'delOrder'],
-    data() {
-        return {
-
-        }
-    },
-    mounted() {
-        console.log(this.tempOrder);
-    }
 }
 
 

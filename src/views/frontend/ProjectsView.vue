@@ -37,7 +37,6 @@ export default {
     methods: {
         getProjects() {
             this.projects = projectsData.projects
-            console.log(this.projects);
         }
     },
     mounted() {

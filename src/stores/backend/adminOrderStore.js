@@ -32,7 +32,6 @@ export default defineStore('order', {
                         this.isLoading = false
                         //待付款
                     } else if (state == 'unPaid') {
-                        console.log('unpaid')
                         const unPaidOrders = []
                         this.orders.filter(item => {
                             const newDate = moment.unix(item.create_at).format('YYYY-MM-DD')

@@ -23,8 +23,6 @@ export default {
     watch: {
         $route() {
             this.path = this.$route.path
-            console.log(this.path);
-            console.log(this.path !== '/about');
         }
     },
     components: {

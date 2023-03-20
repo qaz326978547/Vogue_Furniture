@@ -36,13 +36,11 @@ export default defineStore('products', {
         },
         getProduct(id) {
             this.isLoading = true
-
             axios.get(`${VITE_URL}/api/${VITE_PATH}/product/${id}`)
                 .then((res) => {
                     this.product = res.data.product
                     this.isLoading = false
                     this.getCategoryItem(this.product.category)
-                    console.log(this.categoryItem)
                 })
                 .catch((err) => {
                     const errMessage = err.data?.message || '資料取得失敗，稍後在試';
@@ -51,14 +49,12 @@ export default defineStore('products', {
         },
         getCategory(category) {
             this.currentCategory = category
-            console.log(category)
             if (category == 'all') {
                 this.getProducts()
             } else {
                 let arr = []
                 arr = this.products.filter(item => item.category === category)
                 this.categoryList = arr
-                console.log(arr);
             }
         },
         getCategoryItem(category) {
@@ -68,7 +64,6 @@ export default defineStore('products', {
                 axios.get(`${VITE_URL}/api/${VITE_PATH}/products/all`)
                     .then((res) => {
                         const arr = res.data.products.filter(item => item.category == category)
-                        console.log('arr', arr);
                         this.categoryItem = arr
                         let limit = []
                         for (let i = 0; i < 4; i++) {

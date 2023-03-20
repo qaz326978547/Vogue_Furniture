@@ -112,7 +112,6 @@ export default {
                 })
         },
         pay() {
-            console.log(this.orderList.order.create_at);
             const today = this.$moment().valueOf()
             this.orderList.order.create_at = today
             const order_id = this.$route.params.id

@@ -10,7 +10,7 @@
     </div>
     <div class="container">
         <div v-for="item in project.imagesUrl">
-            <img class="my-3" :src="item" alt="">
+            <img class="my-3  mx-auto project-image" :src="item" alt="">
         </div>
         <div>
             <div v-if="project.project == '客廳'">
@@ -112,7 +112,6 @@ export default {
                     console.log(res.data.products);
                     const category = res.data.products.filter(item => item.category == this.project.category)
                     this.products = category
-                    console.log(this.products);
                 })
         },
         ...mapActions(productsStore, ['getCategoryItem'])
@@ -136,6 +135,11 @@ export default {
     background-size: cover;
     height: 40vh;
 }
+
+.project-image {
+    width: 800px;
+}
+
 
 .swiper-pagination {
     position: relative;

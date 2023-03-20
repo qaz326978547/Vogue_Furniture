@@ -8,7 +8,7 @@
                     <div class="col ">
                         <swiper :slides-per-view="3" :space-between="10" :modules="modules" navigation
                             :pagination="{ clickable: true }">
-                            <swiper-slide v-for="item in product.imagesUrl">
+                            <swiper-slide v-for="item in product.imagesUrl" :key="item.id">
                                 <img :src="item" alt="" @click="mainImge = item" style="max-height: 150px;">
                             </swiper-slide>
                         </swiper>
@@ -87,8 +87,6 @@ export default {
     },
     watch: {
         $route(to, from) {
-            console.log('to', to);
-            console.log('to', from);
             this.$router.push(to.path)
 
         }
@@ -100,7 +98,6 @@ export default {
         const { id } = this.$route.params
         this.id = id
         this.getProduct(id)
-        console.log(this.product);
     }
 }
 

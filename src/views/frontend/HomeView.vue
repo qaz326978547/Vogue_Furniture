@@ -171,7 +171,6 @@ export default {
   mounted() {
     this.getCategoryItem('桌椅系列')
     this.projects = project.projects
-    console.log(this.projects);
   },
 
 }
