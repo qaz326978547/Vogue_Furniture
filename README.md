@@ -1,4 +1,4 @@
-# week-6
+# 專案名稱:羅根傢俱Vogue_Furniture
 
 This template should help get you started developing with Vue 3 in Vite.
 
