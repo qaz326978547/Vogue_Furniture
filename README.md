@@ -1,4 +1,4 @@
-![首頁](https://imgur.com/kVfWh3f) 
+![首頁]([https://imgur.com/kVfWh3f](https://i.imgur.com/kVfWh3f.png)) 
 # 專案名稱:羅根傢俱Vogue_Furniture
 
 This template should help get you started developing with Vue 3 in Vite.
