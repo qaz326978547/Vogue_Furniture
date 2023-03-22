@@ -12,6 +12,7 @@ Demo:[http://localhost:5173/Vogue_Furniture/#/](https://qaz326978547.github.io/V
 * 利用 vue-sweetalert 設置提示訊息，提升使用者體驗
 * 利用 AOS 製作視差滾動
 * 利用 moment.js 轉換 Timestamp 處理
+* Swiper 輪播功能
 
 ## 專案介紹
 
