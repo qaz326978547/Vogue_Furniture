@@ -1,7 +1,13 @@
 ![https://i.imgur.com/kVfWh3f.png](https://i.imgur.com/kVfWh3f.png)
 # 專案名稱:羅根傢俱Vogue_Furniture
 
-This template should help get you started developing with Vue 3 in Vite.
+## 使用技術
+* 利用 Vue.js 搭配 Vite 建立專案
+* 利用 axios 處理 AJAX 請求，獲取後端資料
+* 利用 Bootstrap 5 建立畫面 UI ，具備響應式設計
+* 利用 VeeValidate 處理表單驗證
+* 利用 vue-sweetalert 設置提示訊息，提升使用者體驗
+* 利用 AOS 製作視差滾動
 
 ## Recommended IDE Setup
 
