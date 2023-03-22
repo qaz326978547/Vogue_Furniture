@@ -17,15 +17,26 @@ Demo:[http://localhost:5173/Vogue_Furniture/#/](https://qaz326978547.github.io/V
 
 ### 前台
 * 電商展示：首頁、商品列表、商品介紹、關於我們 等
-* 文章展示：文章列表、單一文章頁，結合電商商品推薦
 * 購物車：新增,編輯,刪除
 * 優惠券
 * 結帳
 
+#### 商品列表
+![https://i.imgur.com/MjhBS9K.png](https://i.imgur.com/MjhBS9K.png)
+#### 商品細節
+![https://i.imgur.com/A34oxDU.png](https://i.imgur.com/A34oxDU.png)
+
 ### 後台
 * 可進行商品的新增、修改、刪除等操作
-* 可管理訂單與圖片
+* 可管理訂單、商品、圖片
 * 具備使用者驗證機制，以確保操作安全
+
+#### 商品管理
+![https://i.imgur.com/Mfhpotl.png](https://i.imgur.com/Mfhpotl.png)
+#### 訂單管理
+![https://i.imgur.com/S0YuMR4.png](https://i.imgur.com/S0YuMR4.png)
+#### 訂單細節
+![https://i.imgur.com/2WV3wcL.png](https://i.imgur.com/2WV3wcL.png)
 
 ## Recommended IDE Setup
 
